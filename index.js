@@ -29,8 +29,8 @@ async function run() {
 
     })
 
-    // ........................Read(R):(GET).................................//
-    // Read (GET)
+    
+    // Data Received
     app.get("/vegetable", async (req, res) => {
       const query = {}
       const cursor = vegetableCollection.find(query)
