@@ -19,9 +19,9 @@ async function run() {
     await client.connect()
     const vegetableCollection = client.db("groceryShop").collection("vegetable");
 
-    //..........................Create(C):(POST)...........................//
 
-    // Create (POST)
+
+    // Data Post
     app.post("/vegetable", async (req, res) => {
       const veg = req.body;
       const result = await vegetableCollection.insertOne(veg);
