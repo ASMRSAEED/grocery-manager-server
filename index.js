@@ -47,8 +47,8 @@ async function run() {
       res.send(vegetable);
     });
 
-    //...........................Update(U):(PUT)........................//
-    // Update quantity
+    
+    // Update Quantity
     app.put("/vegetable/:id", async (req, res) => {
       const id = req.params.id;
       const updatedStock = req.body;
