@@ -38,7 +38,7 @@ async function run() {
       res.send(vegetables)
     })
 
-    // Get Single package
+    // Single package Received
     app.get("/vegetable/:id", async (req, res) => {
       const id = req.params;
       console.log("getting specific place", id);
