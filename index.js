@@ -67,8 +67,8 @@ async function run() {
     });
 
 
-    //...................Delete(D):(DELETE)..........................//
-    // Delete an inventory
+    
+    // Delete From Inventory
     app.delete("/vegetable/:id", async (req, res) => {
       const id = req.params;
       const query = { _id: ObjectId(id) };
